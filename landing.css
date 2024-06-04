@@ -1,0 +1,116 @@
+body {
+    font-family: "DM Serif Display", serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#child {
+    margin: 20px;
+    border: 3px solid #3f531e;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: center; 
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-family: "DM Serif Display", serif;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #3f531e;
+    transition: transform 0.3s;
+}
+
+.more-info-box {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    display: none;
+}
+
+.tell-me-more {
+    text-decoration: underline;
+    color: green;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.tell-me-more:hover{
+        color:#7CAD89
+}
+
+button:hover {
+    animation: bubble 0.4s ease-out;
+    background-color: #3f531e;
+    color: #9cd9ac;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+p {
+    text-align: justify;
+    padding: 20px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    #child {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .images-container {
+        gap: 5px;
+    }
+
+    button {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .more-info-box {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    p {
+        padding: 10px;
+    }
+}

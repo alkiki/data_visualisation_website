@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landing.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Genes and diseases association</h1>
+    <div id="child">
+      <p>
+        This project focuses on data visualisation that connects various
+        diseases to the genes associated with them. This network shows that many
+        diseases have common genetic causes. When genes are linked to similar
+        diseases, their products (like proteins) tend to interact more, and
+        their activity patterns are more alike. This suggests that there are
+        specific groups of genes and their products that work together in ways
+        that are unique to each disease.
+      </p>
+      <a href="#" id="tellMeMoreLink" class="tell-me-more">Tell me more!</a>
+      <div class="images-container" id="images">
+        <img src="gene2.gif" alt="Image 1" />
+        <img src="gene1.gif" alt="Image 2" />
+        <img src="gene3.gif" alt="" />
+        <!-- Add more images as needed -->
+      </div>
+      <div class="more-info-box" id="moreInfoBox">
+        <p>
+          This website consists of three graphs. First one is a more genereic
+          perspective on how all of the cancer-related diseases and genes are
+          associated with each other. Each node in the graph represents either a
+          disease or a gene, while the edges denote the connections between
+          them.
+        </p>
+        <p>
+          The second graphs represents diseases that have the most gene related
+          to them as a pie chart. Each slice of the pie represents a disease,
+          and the size of the slice corresponds to the number of genes
+          associated with that particular disease. It has an interactive
+          feature, by clicking on each part of the pie chart the user can find
+          out more information.
+        </p>
+        <p>
+          The third and final graph shows information about the genes and which
+          has the most connections to different diseases.
+        </p>
+      </div>
+    </div>
+
+    <button onclick="redirectToNextPage()">Find out more</button>
+  </body>
+  <script src="landing.js"></script>
+  <script>
+    function redirectToNextPage() {
+      window.location.href = "index.html";
+    }
+  </script>
+</html>

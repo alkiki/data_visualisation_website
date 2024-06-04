@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gene-Disease Network Visualization</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Genes and Diseases association</h1>
+    <section id="details">
+      <a href="info.html" style="text-decoration:none">Learn more</a>
+      <p>This network graph provides overview of the connection between the diseases and the genes associated with them. The grpah is interactive, you can drag the nodes around to see dynamic  </p>
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <script src="network.js"></script>
+  </body>
+  <script>
+    // function that redirects the user to the next page
+    function redirectToNextPage(){
+      window.location.href = 'info.html'
+    }
+  </script>
+</html>
