@@ -31,7 +31,7 @@ function processJSONData(data) {
     //   .force('center', d3.forceCenter(width / 2, height / 2));
 
     const legendData = [
-      { label: "Diseases", color: "#646efe" },
+      { label: "Diseases", color: "lightblue" },
       { label: "Genes", color: "green" }
     ];
     
@@ -92,7 +92,7 @@ function processJSONData(data) {
       .data(nodes)
       .join("circle")
         .attr("r", (d) => nodeSizeScale(nodeDegrees[d.id]))
-        .style("fill", (d) => (d.type === "gene" ? "green" : "#646efe"));
+        .style("fill", (d) => (d.type === "gene" ? "green" : "lightblue"));
 
     const labels = nodes.map(node => node.label);
 
